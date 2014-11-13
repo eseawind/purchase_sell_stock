@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+   <ScrollView
+       android:id="@+id/scrollView1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" >
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:gravity="center"
+           android:orientation="vertical" >
+
+           <LinearLayout
+               android:layout_width="280dp"
+               android:layout_marginTop="20dp"
+               android:layout_height="wrap_content"
+               android:orientation="vertical" >
+
+               <EditText                   
+                   android:id="@+id/reg_name"
+                   android:layout_width="280dp"
+                   android:layout_height="50dp"
+            	   android:background="@drawable/username"
+            	   android:layout_marginBottom="5dp"
+            	   android:ems="10"
+            	   android:hint="请输入账号"
+            	   android:paddingLeft="50dp"
+            	   android:singleLine="true" ><requestFocus />
+               </EditText>
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="280dp"
+               android:layout_height="wrap_content"
+               android:orientation="vertical" >
+
+               <EditText
+                   android:id="@+id/reg_pwd"
+                   android:layout_width="280dp"
+		            android:layout_height="50dp"
+		            android:background="@drawable/password"
+		            android:ems="10"
+		            android:hint="请输入密码"
+		            android:paddingLeft="50dp"
+		            android:inputType="textPassword"
+		            android:singleLine="true"/>
+
+               <EditText
+                   android:id="@+id/reg_pwd2"
+                   android:layout_width="280dp"
+		            android:layout_height="50dp"
+		            android:background="@drawable/password"
+		            android:ems="10"
+		            android:hint="再次输入密码"
+		            android:paddingLeft="50dp"
+		            android:inputType="textPassword"
+		            android:singleLine="true" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="280dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:orientation="vertical" >
+
+               <TextView
+                   android:id="@+id/textView4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="设置找回密码问题：" />
+
+               <Spinner
+                   android:id="@+id/reg_spinner"
+                   android:layout_width="280dp"
+                   android:background="@drawable/spinner"
+                   android:hint="请选择提示问题"
+                   android:paddingLeft="20dp"
+                   android:layout_marginBottom="5dp"
+                   android:layout_height="50dp" />
+
+               <EditText
+                   android:id="@+id/reg_ans"
+                   android:layout_width="280dp"
+                   android:layout_height="50dp"
+                   android:ems="10"
+                   android:background="@color/white"
+                   android:paddingLeft="20dp"
+                   android:hint="输入问题答案："
+                   android:singleLine="true" />
+
+           </LinearLayout>
+
+           <Button
+               android:layout_marginTop="20dp"
+               android:id="@+id/button_reg"
+               android:layout_width="280dp"
+               android:layout_height="50dp"
+               android:background="@drawable/button_style_cheng"
+				android:onClick="onClick_ok"
+               android:text="注  册"
+            	android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+           <!-- android:onClick="onClick_ok" -->
+           
+       </LinearLayout>
+   </ScrollView>
+
+</LinearLayout>

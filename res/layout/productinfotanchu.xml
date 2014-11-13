@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <!-- 用于显示客户的基本信息 -->
+    
+    <Space
+        android:layout_width="40dp"
+        android:layout_height="70dp" />
+
+    <LinearLayout
+        android:layout_width="750dp"
+        android:layout_height="428dp"
+        android:orientation="vertical" >
+        
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="40dp" />
+        
+        <!-- 阻止软键盘弹出 -->
+
+        <RelativeLayout
+            android:id="@+id/linearLayout_focus"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+        
+        <LinearLayout 
+            android:layout_width="600dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal" >
+        
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品名称："
+                android:textSize="30dp"/>
+            
+            <!-- 捕获焦点，改善用户体验 -->
+           
+            
+	        <EditText 
+	            android:id="@+id/edit_lurutanchu_shangpinming"
+	            android:layout_width="500dp"
+	            android:layout_height="60dp"
+	            android:textSize="30dp"/>
+        
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="600dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal" >
+        
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品售价："
+                android:textSize="30dp"/>
+            
+	        <EditText 
+	            android:id="@+id/edit_lurutanchu_shangpinshoujia"
+	            android:layout_width="500dp"
+	            android:layout_height="60dp"
+	            android:textSize="30dp"
+	            android:inputType="number"/>
+        
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="600dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal" >
+        
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购买数量："
+                android:textSize="30dp"/>
+            
+	        <EditText 
+	            android:id="@+id/edit_lurutanchu_goumaishuliang"
+	            android:layout_width="500dp"
+	            android:layout_height="60dp"
+	            android:textSize="30dp"
+	            android:inputType="number"/>
+        
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="600dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal" >
+        
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品产地："
+                android:textSize="30dp"/>
+
+            <EditText
+                android:id="@+id/edit_lurutanchu_shangpinchandi"
+                android:layout_width="500dp"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:textSize="30dp" />
+        
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="600dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal" >
+        
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="生产日期："
+                android:textSize="30dp"/>
+            
+	        <EditText 
+	            android:id="@+id/edit_lurutanchu_shengchanriqi"
+	            android:layout_width="500dp"
+	            android:layout_height="60dp"
+	            android:textSize="30dp"
+	            android:inputType="datetime"/>
+        
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="600dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal" >
+        
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保质期："
+                android:textSize="30dp"/>
+            
+	        <EditText 
+	            android:id="@+id/edit_lurutanchu_baozhiqi"
+	            android:layout_width="500dp"
+	            android:layout_height="60dp"
+	            android:textSize="30dp"/>
+        
+        </LinearLayout>        
+        
+    </LinearLayout>
+    
+    <View
+		android:layout_width="1dp"
+		android:layout_height="match_parent"
+		android:background="#FF909090"/>
+		  
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="70dp" />
+    
+    <!-- 编辑和删除按钮 -->
+    
+    <LinearLayout
+        android:layout_width="134dp"
+        android:layout_height="450dp"
+        android:orientation="vertical" >
+  <Space
+            android:layout_width="20dp"
+            android:layout_height="40dp" />
+        <Button
+            android:id="@+id/edit_lurutanchu_xinzeng"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:text="新增"
+            android:textSize="40dp" />
+        
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="30dp" />
+        
+        <Button 
+            android:id="@+id/edit_lurutanchu_save"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:text="保存"
+            android:textSize="40dp"/>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="30dp" />
+        
+        <Button 
+            android:id="@+id/edit_lurutanchu_delete"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:text="删除"
+            android:textSize="40dp"/>
+        
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="30dp" />
+        
+        <Button 
+            android:id="@+id/edit_lurutanchu_back"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:text="返回"
+            android:textSize="40dp"/>
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

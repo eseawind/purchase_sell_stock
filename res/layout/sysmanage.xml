@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	
+	<!-- 不继承TabActivity,然后在布局文件中定义TabHost，最后讲各个Tab选项卡添加到TabHost中 -->
+
+	<!-- 定义TabHost ,自定义的TabHost一定得包含TabWidget 和 FrameLayout，
+	并且 TabWidget 的ID一定是@android:id/tabs
+	FrameLayout 的Id一定是@android:id/tabcontent-->
+	
+	<!-- TabHost必须包含一个 TabWidget和一个FrameLayout-->  
+	
+	<TabHost 
+	    android:id="@+id/tabs"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" >
+	
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent" >
+	
+			<!-- 定义TabWidget，此控件 必须和TabHost一起使用 -->
+			
+			<TabWidget 
+	    		android:id="@android:id/tabs"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"/>
+	
+		    <!-- 定义FrameLayout-->
+		    
+			<FrameLayout 
+	    		android:id="@android:id/tabcontent"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+			    
+			    <!-- Tab1的基本布局 -->
+			    
+			    <LinearLayout
+			        android:id="@+id/tab1"
+			        android:orientation="horizontal"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent" >
+				    
+			        <Space
+					    android:layout_width="40dp"
+					    android:layout_height="70dp" />
+
+			    </LinearLayout>
+	
+			   
+			    
+			    <!-- Tab2的基本布局 -->
+			    
+			    <LinearLayout 
+			        android:id="@+id/tab2"
+			        android:orientation="horizontal"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent" >
+				    
+			        <Space
+					    android:layout_width="40dp"
+					    android:layout_height="70dp" />
+				    
+			        
+			        
+			    </LinearLayout>
+				
+			    <!-- Tab3的基本布局 -->
+			    
+			    <LinearLayout 
+			        android:id="@+id/tab3"
+			        android:orientation="horizontal"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent" >
+				    
+			        <Space
+					    android:layout_width="40dp"
+					    android:layout_height="70dp" />
+				    
+			       
+			        
+			    </LinearLayout>
+				
+				
+				
+	
+			</FrameLayout>
+		</LinearLayout>
+	</TabHost>
+</LinearLayout>

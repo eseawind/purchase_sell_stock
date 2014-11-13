@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	
+	<!-- 不继承TabActivity,然后在布局文件中定义TabHost，最后讲各个Tab选项卡添加到TabHost中 -->
+
+	<!-- 定义TabHost ,自定义的TabHost一定得包含TabWidget 和 FrameLayout，
+	并且 TabWidget 的ID一定是@android:id/tabs
+	FrameLayout 的Id一定是@android:id/tabcontent-->
+	
+	<!-- TabHost必须包含一个 TabWidget和一个FrameLayout-->  
+	
+	<TabHost 
+	    android:id="@+id/tabs"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" >
+	
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent" >
+	
+			<!-- 定义TabWidget，此控件 必须和TabHost一起使用 -->
+			
+			<TabWidget 
+	    		android:id="@android:id/tabs"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"/>
+	
+		    <!-- 定义FrameLayout-->
+		    
+			<FrameLayout 
+	    		android:id="@android:id/tabcontent"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+			    
+			    <!-- Tab1的基本布局 -->
+			    
+			    <LinearLayout
+			        android:id="@+id/tab1"
+			        android:orientation="horizontal"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent" >
+				    
+			        <Space
+					    android:layout_width="40dp"
+					    android:layout_height="70dp" />
+				    
+			        <LinearLayout 
+			            android:layout_width="600dp"
+			            android:layout_height="400dp"
+			            android:orientation="vertical" >			            			          
+			            
+			            <LinearLayout 
+			                android:layout_width="600dp"
+			                android:layout_height="40dp"
+			                android:orientation="horizontal">				
+			                
+				            <TextView 
+				                android:layout_width="200dp"
+				                android:layout_height="wrap_content"
+				                android:text="名称"
+				                android:textColor="#999999"
+				                android:textSize="30dp"
+				                android:id="@+id/tab1et1"/>
+				            
+				            <TextView 
+				                android:layout_width="200dp"
+				                android:layout_height="wrap_content"
+				                android:text="电话"
+				                android:textColor="#999999"
+				                android:textSize="30dp"/>
+				            
+				            <TextView 
+				                android:layout_width="200dp"
+				                android:layout_height="wrap_content"
+				                android:text="邮件"
+				                android:textColor="#999999"
+				                android:textSize="30dp"/>
+			       
+			            </LinearLayout>
+			        
+			            <View
+						    android:layout_width="match_parent"
+							android:layout_height="1.5dp"
+							android:background="@color/deepskyblue" />
+
+			            
+				        <ListView
+					        android:id="@+id/listView_p"
+					        android:layout_width="650dp"
+					        android:layout_height="370dp" >
+					
+					    </ListView>				    				       
+				        
+			        </LinearLayout>
+			        
+			        <Space
+					    android:layout_width="20dp"
+					    android:layout_height="70dp" />
+			        
+			        <View
+						android:layout_width="1.5dp"
+						android:layout_height="match_parent"
+						android:background="@color/deepskyblue"/>
+			        
+			        <Space
+					    android:layout_width="80dp"
+					    android:layout_height="70dp" />
+			        
+			        <LinearLayout 
+			            android:layout_width="200dp"  
+			            android:layout_height="400dp" 
+			            android:orientation="vertical">
+			            
+			            <Space
+					        android:layout_width="20dp"
+					        android:layout_height="50dp" />
+			             
+				        <Button 
+				            android:id="@+id/button_addp"
+				            android:layout_width="130dp"
+				            android:layout_height="70dp"
+				            android:text="添加"
+				            android:background="@color/deepskyblue"
+				            android:textSize="30dp"
+				            android:textColor="#FFFFFF"/>
+				         
+				        <Space
+					        android:layout_width="20dp"
+					        android:layout_height="30dp" />
+				        
+				        <Button 
+				            android:id="@+id/button_findp"
+				            android:layout_width="130dp"
+				            android:layout_height="70dp"
+				            android:background="@color/deepskyblue"
+				            android:text="查询"
+				            android:textSize="30dp"
+				            android:textColor="#FFFFFF"/>				       			        
+				        
+				        <Space
+					        android:layout_width="20dp"
+					        android:layout_height="30dp" />
+					        
+				        <!-- 
+					    <Button
+						    android:id="@+id/button_backp"
+						    android:layout_width="130dp"
+						    android:layout_height="70dp"
+						    android:text="返回"
+						    android:textSize="30dp" />
+					    			 -->
+					    				     			        
+			        </LinearLayout>
+			        
+			    </LinearLayout>
+	
+			   
+			    
+			    <!-- Tab2的基本布局 -->
+			    
+			    <LinearLayout 
+			        android:id="@+id/tab2"
+			        android:orientation="horizontal"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent" >
+				    
+			        <Space
+					    android:layout_width="40dp"
+					    android:layout_height="70dp" />
+				    
+			        <LinearLayout 
+			            android:layout_width="600dp"
+			            android:layout_height="400dp"
+			            android:orientation="vertical" >			            			          
+			            
+			            <LinearLayout 
+			                android:layout_width="600dp"
+			                android:layout_height="40dp"
+			                android:orientation="horizontal">				
+			                
+				            <TextView 
+				                android:layout_width="200dp"
+				                android:layout_height="wrap_content"
+				                android:text="姓名"
+				                android:textColor="#999999"
+				                android:textSize="30dp"/>
+				            
+				            <TextView 
+				                android:layout_width="200dp"
+				                android:layout_height="wrap_content"
+				                android:text="电话"
+				                android:textColor="#999999"
+				                android:textSize="30dp"/>
+				            
+				            <TextView 
+				                android:layout_width="200dp"
+				                android:layout_height="wrap_content"
+				                android:text="住址"
+				                android:textColor="#999999"
+				                android:textSize="30dp"/>
+			       
+			            </LinearLayout>
+			        
+			            <View
+						    android:layout_width="match_parent"
+							android:layout_height="1.5dp"
+							android:background="@color/deepskyblue" />
+
+			            
+				        <ListView
+					        android:id="@+id/listView2"
+					        android:layout_width="650dp"
+					        android:layout_height="370dp" >
+					
+					    </ListView>				    				       
+				        
+			        </LinearLayout>
+			        
+			        <Space
+					    android:layout_width="20dp"
+					    android:layout_height="70dp" />
+			        
+			        <View
+						android:layout_width="1.5dp"
+						android:layout_height="match_parent"
+						android:background="@color/deepskyblue"/>
+			        
+			        <Space
+					    android:layout_width="80dp"
+					    android:layout_height="70dp" />
+			        
+			        <LinearLayout 
+			            android:layout_width="200dp"  
+			            android:layout_height="400dp" 
+			            android:orientation="vertical">
+			            
+			            <Space
+					        android:layout_width="20dp"
+					        android:layout_height="50dp" />
+			             
+				        <Button 
+				            android:id="@+id/button_add2"
+				            android:layout_width="130dp"
+				            android:layout_height="70dp"
+				            android:background="@color/deepskyblue"
+				            android:text="添加"
+				            android:textSize="30dp"
+				            android:textColor="#FFFFFF"/>
+				         				      
+				        <Space
+					        android:layout_width="20dp"
+					        android:layout_height="30dp" />
+				        
+				        <Button 
+				            android:id="@+id/button_find2"
+				            android:layout_width="130dp"
+				            android:layout_height="70dp"
+				            android:background="@color/deepskyblue"
+				            android:text="查询"
+				            android:textSize="30dp"
+				            android:textColor="#FFFFFF"/>
+				        
+				        
+				        
+				        <Space
+					        android:layout_width="20dp"
+					        android:layout_height="30dp" />
+					        
+				        <!-- 
+					    <Button
+						    android:id="@+id/button_back1"
+						    android:layout_width="130dp"
+						    android:layout_height="70dp"
+						    android:text="返回"
+						    android:textSize="30dp" />
+						    -->
+					    
+					     
+			        
+			        </LinearLayout>
+			        
+			    </LinearLayout>
+				
+			    <!-- Tab3的基本布局 -->
+			    
+			    <LinearLayout 
+			        android:id="@+id/tab3"
+			        android:orientation="horizontal"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent" >
+				    
+			        <Space
+					    android:layout_width="40dp"
+					    android:layout_height="70dp" />
+				    
+			        <LinearLayout 
+			            android:layout_width="600dp"
+			            android:layout_height="400dp"
+			            android:orientation="vertical" >
+			            
+			            <LinearLayout 
+			                android:layout_width="600dp"
+			                android:layout_height="40dp"
+			                android:orientation="horizontal">
+						    
+				            <TextView 
+				                android:layout_width="200dp"
+				                android:layout_height="wrap_content"
+				                android:text="名称"
+				                android:textColor="#999999"
+				                android:textSize="30dp"/>
+				            
+				            <TextView 
+				                android:layout_width="200dp"
+				                android:layout_height="wrap_content"
+				                android:text="生产商"
+				                android:textColor="#999999"
+				                android:textSize="30dp"/>
+				            
+				            <TextView 
+				                android:layout_width="200dp"
+				                android:layout_height="wrap_content"
+				                android:text="保质期"
+				                android:textColor="#999999"
+				                android:textSize="30dp"/>
+			       
+			            </LinearLayout>
+			            
+			            <View
+						    android:layout_width="match_parent"
+							android:layout_height="1.5dp"
+							android:background="@color/deepskyblue" />
+			        
+				        <ListView
+					        android:id="@+id/listView3"
+					        android:layout_width="650dp"
+					        android:layout_height="370dp" >
+					
+					    </ListView>
+				    				        
+			        </LinearLayout>
+			        
+			        <Space
+					    android:layout_width="20dp"
+					    android:layout_height="70dp" />
+			        
+			        <!-- 分隔线 -->
+			        
+			        <View
+						android:layout_width="1.5dp"
+						android:layout_height="match_parent"
+						android:background="@color/deepskyblue"/>
+			        
+			        <Space
+					    android:layout_width="80dp"
+					    android:layout_height="70dp" />
+			        
+			        <LinearLayout 
+			            android:layout_width="200dp"  
+			            android:layout_height="400dp" 
+			            android:orientation="vertical">
+			            
+			            <Space
+					        android:layout_width="20dp"
+					        android:layout_height="50dp" />
+			            
+				        <Button 
+				            android:id="@+id/addgoods"
+				            android:layout_width="130dp"
+				            android:layout_height="70dp"
+				            android:background="@color/deepskyblue"
+				            android:text="添加"
+				            android:textSize="30dp"
+				            android:textColor="#FFFFFF"/>
+				        
+				        <Space
+					        android:layout_width="20dp"
+					        android:layout_height="30dp" />
+				        
+				        <Button 
+				            android:id="@+id/findgoods"
+				            android:layout_width="130dp"
+				            android:layout_height="70dp"
+				            android:background="@color/deepskyblue"
+				            android:text="查询"
+				            android:textSize="30dp"
+				            android:textColor="#FFFFFF"/>
+				        
+				        
+				        
+				        <Space
+					        android:layout_width="20dp"
+					        android:layout_height="30dp" />
+					        
+				        <!-- 
+					    <Button
+						    android:id="@+id/goodsback"
+						    android:layout_width="130dp"
+						    android:layout_height="70dp"
+						    android:text="返回"
+						    android:textSize="30dp" />
+					    -->
+					     
+			        
+			        </LinearLayout>
+			        
+			    </LinearLayout>
+				
+				<!-- Tab4的基本布局 -->
+			    
+			    <LinearLayout
+			        android:id="@+id/tab4"
+			        android:orientation="horizontal"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent" >
+				    
+			        <Space
+					    android:layout_width="40dp"
+					    android:layout_height="70dp" />
+				    
+			        <LinearLayout 
+			            android:layout_width="600dp"
+			            android:layout_height="400dp"
+			            android:orientation="vertical" >			            			          
+			            
+			            <LinearLayout 
+			                android:layout_width="600dp"
+			                android:layout_height="40dp"
+			                android:orientation="horizontal">				
+			                
+				            <TextView 
+				                android:layout_width="200dp"
+				                android:layout_height="wrap_content"
+				                android:text="姓名"
+				                android:textColor="#999999"
+				                android:textSize="30dp"/>
+				            
+				            <TextView 
+				                android:layout_width="200dp"
+				                android:layout_height="wrap_content"
+				                android:text="电话"
+				                android:textColor="#999999"
+				                android:textSize="30dp"/>
+				            
+				            <TextView 
+				                android:layout_width="200dp"
+				                android:layout_height="wrap_content"
+				                android:text="邮件"
+				                android:textColor="#999999"
+				                android:textSize="30dp"/>
+			       
+			            </LinearLayout>
+			        
+			            <View
+						    android:layout_width="match_parent"
+							android:layout_height="1.5dp"
+							android:background="@color/deepskyblue" />
+
+			            
+				        <ListView
+					        android:id="@+id/listView_s"
+					        android:layout_width="650dp"
+					        android:layout_height="370dp" >
+					
+					    </ListView>				    				       
+				        
+			        </LinearLayout>
+			        
+			        <Space
+					    android:layout_width="20dp"
+					    android:layout_height="70dp" />
+			        
+			        <View
+						android:layout_width="1.5dp"
+						android:layout_height="match_parent"
+						android:background="@color/deepskyblue"/>
+			        
+			        <Space
+					    android:layout_width="80dp"
+					    android:layout_height="70dp" />
+			        
+			        <LinearLayout 
+			            android:layout_width="200dp"  
+			            android:layout_height="400dp" 
+			            android:orientation="vertical">
+			            
+			            <Space
+					        android:layout_width="20dp"
+					        android:layout_height="50dp" />
+			             
+				        <Button 
+				            android:id="@+id/button_adds"
+				            android:layout_width="130dp"
+				            android:layout_height="70dp"
+				            android:background="@color/deepskyblue"
+				            android:text="添加"
+				            android:textSize="30dp"
+				            android:textColor="#FFFFFF"/>
+				         
+				        <Space
+					        android:layout_width="20dp"
+					        android:layout_height="30dp" />
+				        
+				        <Button 
+				            android:id="@+id/button_finds"
+				            android:layout_width="130dp"
+				            android:layout_height="70dp"
+				            android:background="@color/deepskyblue"
+				            android:text="查询"
+				            android:textSize="30dp"
+				            android:textColor="#FFFFFF"/>				       			        
+				        
+				        <Space
+					        android:layout_width="20dp"
+					        android:layout_height="30dp" />
+					        
+				        <!--
+					    <Button
+						    android:id="@+id/button_backs"
+						    android:layout_width="130dp"
+						    android:layout_height="70dp"
+						    android:text="返回"
+						    android:textSize="30dp" />
+					    	-->
+					    				     			        
+			        </LinearLayout>
+			        
+			    </LinearLayout>
+				
+	
+			</FrameLayout>
+		</LinearLayout>
+	</TabHost>
+</LinearLayout>

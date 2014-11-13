@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    
+        <requestFocus />
+       
+        <Button
+            android:id="@+id/tongjifenxi"
+            android:layout_width="120dip"
+            android:layout_height="100dip"
+            android:layout_alignBaseline="@+id/xitong"
+            android:layout_alignBottom="@+id/xitong"
+            android:layout_alignLeft="@+id/cangku"
+            android:background="@drawable/tongjifenxi" />
+ 
+        <Button
+            android:id="@+id/dangan"
+            android:layout_width="120dip"
+            android:layout_height="100dip"
+            android:layout_alignBaseline="@+id/tongjifenxi"
+            android:layout_alignBottom="@+id/tongjifenxi"
+            android:layout_alignLeft="@+id/caigou"
+            android:background="@drawable/dangan" />
+ 
+        <Button
+            android:id="@+id/caigou"
+            android:layout_width="120dip"
+            android:layout_height="100dip"
+            android:layout_alignBaseline="@+id/xiaoshou"
+            android:layout_alignBottom="@+id/xiaoshou"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/caigou" />
+
+        
+        <Button
+            android:id="@+id/cangku"
+            android:layout_width="120dip"
+            android:layout_height="100dip"
+            android:layout_alignBaseline="@+id/caigou"
+            android:layout_alignBottom="@+id/caigou"
+            android:layout_marginLeft="113dp"
+            android:layout_toRightOf="@+id/caigou"
+            android:background="@drawable/cangku" />
+
+        <Button
+            android:id="@+id/xitong"
+            android:layout_width="120dip"
+            android:layout_height="100dip"
+            android:layout_below="@+id/xiaoshou"
+            android:layout_marginRight="107dp"
+            android:layout_marginTop="29dp"
+            android:layout_toLeftOf="@+id/dangan"
+            android:background="@drawable/xitong"
+            android:onClick="onClick_Settings" />
+
+        <Button
+            android:id="@+id/xiaoshou"
+            android:layout_width="120dip"
+            android:layout_height="100dip"
+            android:layout_alignLeft="@+id/xitong"
+            android:layout_centerVertical="true"
+            android:background="@drawable/xiaoshou" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/caigou"
+            android:layout_alignLeft="@+id/xiaoshou"
+            android:layout_marginBottom="63dp"
+            android:layout_marginLeft="19dp"
+            android:text="欢迎使用进销存管理系统！"
+            android:textColor="@color/fuchsia"
+            android:textSize="65px" />
+    
+</RelativeLayout>

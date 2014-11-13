@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/qiankuan_dingdanhao"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:gravity="center"
+        android:text="订单号"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/qiankuan_kehuming"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="客户名"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/qiankuan_shangqian"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="尚欠"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/qiankuan_caozuoyuan"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="操作员"
+        android:textSize="20dp" 
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/qiankuan_tradetime"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:text="交易时间"
+        android:textSize="20dp" 
+        android:gravity="center"/>
+
+</LinearLayout>

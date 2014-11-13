@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1.02"
+        android:background="@drawable/beijing1"
+        android:orientation="vertical" >
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="110dp" >
+
+            <TableRow
+                android:layout_width="740dp"
+                android:layout_height="70dp"
+                android:background="@drawable/shape_top_corner_no_bottom_line"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="库存号："
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/textView_chacang_tanchu_kucunhao"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:text="Large Text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="商品编号："
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/textView_chacang_tanchu_shangpinbianhao"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Large Text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="20dp" />
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="110dp" >
+
+            <TableRow
+                android:layout_width="740dp"
+                android:layout_height="70dp"
+                android:background="@drawable/shape_no_corner_without_bottom"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="商品名称："
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/textView_chacang_tanchu_shangpinming"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Large Text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="0dp"
+                    android:text="保质期："
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/textView_chacang_tanchu_baozhiqi"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Large Text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="20dp" />
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="110dp" >
+
+            <TableRow
+                android:layout_width="740dp"
+                android:layout_height="70dp"
+                android:background="@drawable/shape_no_corner_without_bottom"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="产地："
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/textView_chacang_tanchu_chandi"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Large Text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="60dp"
+                    android:text="进货价格："
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/textView_chacang_tanchu_jinhuojiage"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Large Text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="20dp" />
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="110dp" >
+
+            <TableRow
+                android:layout_width="740dp"
+                android:layout_height="70dp"
+                android:background="@drawable/shape_no_corner_without_bottom"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="生产商："
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/textView_chacang_tanchu_shengchanshang"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Large Text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="销售价格："
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/textView_chacang_tanchu_xiaoshoujiage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Large Text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="20dp" />
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="110dp" >
+
+            <TableRow
+                android:layout_width="740dp"
+                android:layout_height="80dp"
+                android:background="@drawable/shape_no_corner_without_bottom"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="生产日期："
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/textView_chacang_tanchu_shengchanriqi"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Large Text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="库存量："
+                    android:textSize="30dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/textView_chacang_tanchu_kucunliang"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Large Text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="20dp" />
+
+            </TableRow>
+        </LinearLayout>
+
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="110dp" >
+
+ <TableRow
+                android:layout_width="740dp"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_bottom_corner_no_top_line" 
+                android:padding="10dip" >
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="操作员："
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/textView_chacang_tanchu_cangzuoyuan"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Large Text"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="入仓时间："
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/textView_chacang_tanchu_rucangshijian"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:text="Large Text"
+                    android:textSize="20dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            </TableRow>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

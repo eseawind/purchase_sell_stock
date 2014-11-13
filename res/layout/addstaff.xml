@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <!-- 用于显示职工的基本信息 -->
+    
+    <Space
+        android:layout_width="40dp"
+        android:layout_height="70dp" />
+    
+    <LinearLayout 
+        android:layout_width="750dp"
+        android:layout_height="450dp"
+        android:orientation="vertical">
+        
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="70dp" />
+        
+        <TableLayout
+            android:layout_width="720dp"
+            android:layout_height="400dp"
+            android:padding="10dip" >
+            
+            <TableRow
+                android:layout_width="600dp"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_no_corner_without_bottom" >
+        
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="  姓名："
+	                android:textSize="30dp"
+	                android:textColor="#87CEFA"/>
+	            
+	         
+		        <EditText 
+		            android:id="@+id/add_s_name"
+		            android:layout_width="500dp"
+		            android:layout_height="60dp"
+		            android:textSize="30dp"
+		            android:background="@null"/>
+        
+	        </TableRow>
+	        
+	        <TableRow
+	                android:layout_width="600dp"
+	                android:layout_height="60dp"
+	                android:background="@drawable/shape_no_corner_without_bottom" >
+	        
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="  电话："
+	                android:textSize="30dp"
+	                android:textColor="#87CEFA"/>
+	            
+		        <EditText 
+		            android:id="@+id/add_s_phone"
+		            android:layout_width="500dp"
+		            android:layout_height="60dp"
+		            android:textSize="30dp"
+		            android:background="@null"/>
+	        
+	        </TableRow>
+	        
+	        <TableRow
+	                android:layout_width="600dp"
+	                android:layout_height="60dp"
+	                android:background="@drawable/shape_no_corner_without_bottom" >
+	        
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="  职位："
+	                android:textSize="30dp"
+	                android:textColor="#87CEFA"/>
+	            
+		        <EditText 
+		            android:id="@+id/add_s_address"
+		            android:layout_width="500dp"
+		            android:layout_height="60dp"
+		            android:textSize="30dp"
+		            android:background="@null"/>
+	        
+	        </TableRow>
+	        
+	        <TableRow
+	                android:layout_width="600dp"
+	                android:layout_height="60dp"
+	                android:background="@drawable/shape_no_corner_without_bottom" >
+	        
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="  邮编："
+	                android:textSize="30dp"
+	                android:textColor="#87CEFA"/>
+	            
+		        <EditText 
+		            android:id="@+id/add_s_postcode"
+		            android:layout_width="500dp"
+		            android:layout_height="60dp"
+		            android:textSize="30dp"
+		            android:background="@null"/>
+	        
+	        </TableRow>
+	        
+	        <TableRow
+	                android:layout_width="600dp"
+	                android:layout_height="60dp"
+	                android:background="@drawable/shape_no_corner_without_bottom" >
+	        
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="  邮件："
+	                android:textSize="30dp"
+	                android:textColor="#87CEFA"/>
+	            
+		        <EditText 
+		            android:id="@+id/add_s_mail"
+		            android:layout_width="500dp"
+		            android:layout_height="60dp"
+		            android:textSize="30dp"
+		            android:background="@null"/>
+	        
+	        </TableRow> 
+        
+    	</TableLayout>
+    
+    </LinearLayout>
+    
+    <View
+		android:layout_width="1.5dp"
+		android:layout_height="match_parent"
+		android:background="@color/deepskyblue"/>
+		  
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="70dp" />
+    
+    <!-- 编辑和删除按钮 -->
+    
+    <LinearLayout 
+        android:layout_width="200dp"
+        android:layout_height="450dp"
+        android:orientation="vertical">
+        
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="220dp" />
+        
+        <Button 
+            android:id="@+id/finish_sinfo"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:text="保存"
+            android:textSize="40dp"/>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="30dp" />
+        
+        <Button 
+            android:id="@+id/cancel_sinfo"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:text="取消"
+            android:textSize="40dp"/>
+        
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+     <!-- 用于显示商品的基本信息 -->
+    
+    <Space
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    
+    <LinearLayout 
+        android:layout_width="750dp"
+        android:layout_height="460dp"
+        android:orientation="vertical">
+        
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="10dp" />
+        
+        <TableLayout
+            android:layout_width="720dp"
+            android:layout_height="460dp"
+            android:padding="10dip" >
+            
+            <TableRow
+                android:layout_width="600dp"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_no_corner_without_bottom" >
+        
+	            <TextView 
+	                android:layout_width="200dp"
+	                android:layout_height="wrap_content"
+	                android:text="  条码："
+	                android:textSize="30dp"
+	                android:textColor="#87CEFA"/>
+	            
+	            <!-- 捕获焦点，改善用户体验
+	            <LinearLayout
+					android:id="@+id/linearLayout_focus"
+					android:focusable="true"							
+					android:focusableInTouchMode="true"								
+					android:layout_width="0px"								
+					android:layout_height="0px"
+					android:orientation="horizontal"/>
+	             -->
+	            
+	            <EditText 
+		            android:layout_width="500dp"
+		            android:layout_height="55dp"
+		            android:textSize="30dp"
+		            android:id="@+id/addgcode"
+		            android:inputType="number"
+		            android:background="@null"/>	        
+	        
+	        </TableRow>
+	        
+	       <TableRow
+                android:layout_width="600dp"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_no_corner_without_bottom" >
+	        
+	            <TextView 
+	                android:layout_width="200dp"
+	                android:layout_height="wrap_content"
+	                android:text="  名称："
+	                android:textSize="30dp"
+	                android:textColor="#87CEFA"/>
+	              
+		        <EditText 
+		            android:id="@+id/addgnameinfo"
+		            android:layout_width="500dp"
+		            android:layout_height="55dp"
+		            android:textSize="30dp"
+		            android:background="@null"/>
+	        
+	        </TableRow>
+	        
+	        <TableRow
+                android:layout_width="600dp"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_no_corner_without_bottom" >
+	        
+	            <TextView 
+	                android:layout_width="200dp"
+	                android:layout_height="wrap_content"
+	                android:text="  产地："
+	                android:textSize="30dp"
+	                android:textColor="#87CEFA"/>
+	            
+		        <EditText 
+		            android:id="@+id/addgareainfo"
+		            android:layout_width="500dp"
+		            android:layout_height="55dp"
+		            android:textSize="30dp"
+		            android:background="@null"/>
+	        
+	        </TableRow>
+	        
+	        <TableRow
+                android:layout_width="600dp"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_no_corner_without_bottom" >
+	        
+	            <TextView 
+	                android:layout_width="200dp"
+	                android:layout_height="wrap_content"
+	                android:text="  生产商："
+	                android:textSize="30dp"
+	                android:textColor="#87CEFA"/>
+	            
+		        <EditText 
+		            android:id="@+id/addgproductorinfo"
+		            android:layout_width="500dp"
+		            android:layout_height="55dp"
+		            android:textSize="30dp"
+		            android:background="@null"/>
+	        
+	        </TableRow>
+	        
+	        <TableRow
+                android:layout_width="600dp"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_no_corner_without_bottom" >
+	        
+	            <TextView 
+	                android:layout_width="200dp"
+	                android:layout_height="wrap_content"
+	                android:text="  生产日期："
+	                android:textSize="30dp"
+	                android:textColor="#87CEFA"/>
+	            
+		        <EditText 
+		            android:id="@+id/addgprodateinfo"
+		            android:layout_width="500dp"
+		            android:layout_height="55dp"
+		            android:textSize="30dp"
+		            android:background="@null"/>
+	        
+	        </TableRow>
+	        
+	        <TableRow
+                android:layout_width="600dp"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_no_corner_without_bottom" >
+	        
+	            <TextView 
+	                android:layout_width="200dp"
+	                android:layout_height="wrap_content"
+	                android:text="  保质期："	           
+	                android:textSize="30dp"
+	                android:textColor="#87CEFA"/>
+	            
+		        <EditText 
+		            android:id="@+id/addgqualityinfo"
+		            android:layout_width="500dp"
+		            android:layout_height="55dp"
+		            android:inputType="number"
+		            android:textSize="30dp"
+		            android:background="@null"/>
+	        
+	        </TableRow>
+	        
+	        <TableRow
+                android:layout_width="600dp"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_no_corner_without_bottom" >
+	        
+	            <TextView 
+	                android:layout_width="200dp"
+	                android:layout_height="wrap_content"
+	                android:text="  进货价格："
+	                android:textSize="30dp"
+	                android:textColor="#87CEFA"/>
+	            
+		        <EditText 
+		            android:id="@+id/addgbidinfo"
+		            android:layout_width="500dp"
+		            android:layout_height="55dp"
+		            android:textSize="30dp"
+		            android:inputType="number"
+		            android:background="@null"/>
+	        
+	        </TableRow>   
+	        
+	        <TableRow
+                android:layout_width="600dp"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_no_corner_without_bottom" >
+	        
+	            <TextView 
+	                android:layout_width="200dp"
+	                android:layout_height="wrap_content"
+	                android:text="  销售价格："
+	                android:textSize="30dp"
+	                android:textColor="#87CEFA"/>
+	            
+		        <EditText 
+		            android:id="@+id/addgpriceinfo"
+		            android:layout_width="500dp"
+		            android:layout_height="55dp"
+		            android:textSize="30dp"
+		            android:inputType="number"
+		            android:background="@null"/>
+		        
+		    </TableRow>   
+        
+        </TableLayout>        
+        
+    </LinearLayout>
+    
+    <View
+		android:layout_width="1.5dp"
+		android:layout_height="match_parent"
+		android:background="@color/deepskyblue"/>
+		  
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="70dp" />
+    
+    <!-- 编辑和删除按钮 -->
+    
+    <LinearLayout 
+        android:layout_width="200dp"
+        android:layout_height="450dp"
+        android:orientation="vertical">
+             
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="220dp" />
+ 
+        <Button 
+            android:id="@+id/finish_ginfo"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:text="保存"
+            android:textSize="40dp"/>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="30dp" />
+        
+        <Button 
+            android:id="@+id/cancel_ginfo"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:text="取消"
+            android:textSize="40dp"/>
+        
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

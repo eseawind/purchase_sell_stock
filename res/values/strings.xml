@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JXCTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello">欢迎使用进销存管理系统</string>
+    <string name="basicInfo">基本信息</string>
+    <string name="back">返回主页</string>
+    <string name="customer_profile">客户档案</string>
+    <string name="stock_trader_file">进货商档案</string>
+    <string name="goods_file">商品档案</string>
+    <string name="staff_file">员工档案</string>
+    <string name="storage_file">仓库管理</string>
+
+</resources>

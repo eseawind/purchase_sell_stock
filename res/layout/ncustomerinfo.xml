@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <!-- 用于显示客户的基本信息 -->
+    
+    <Space
+        android:layout_width="40dp"
+        android:layout_height="70dp" />
+    
+    <LinearLayout 
+        android:layout_width="750dp"
+        android:layout_height="410dp"
+        android:orientation="vertical">
+        
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="36dp" />
+        
+        <TableLayout
+            android:layout_width="720dp"
+            android:layout_height="400dp"
+            android:padding="10dip" >
+            
+            <TableRow
+                android:layout_width="600dp"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_no_corner_without_bottom" >
+
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="    姓名："
+	                android:textSize="30dp"
+	                android:textColor="#87CEFA"/>
+	            
+	            <!-- 捕获焦点，改善用户体验 
+	            <LinearLayout
+					android:id="@+id/linearLayout_focus"
+					android:focusable="true"							
+					android:focusableInTouchMode="true"								
+					android:layout_width="0dp"								
+					android:layout_height="0dp"
+					android:orientation="vertical"/> -->
+	            
+		        <EditText 
+		            android:id="@+id/nameinfo1"
+		            android:layout_width="500dp"
+		            android:layout_height="55dp"
+		            android:textSize="30dp"
+		            android:background="@null"/>
+        
+        </TableRow>
+        
+        <TableRow
+                android:layout_width="600dp"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_no_corner_without_bottom" >
+        
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    电话："
+                android:textSize="30dp"
+                android:textColor="#87CEFA"/>
+            
+	        <EditText 
+	            android:id="@+id/phoneinfo1"
+	            android:layout_width="500dp"
+	            android:layout_height="55dp"
+	            android:textSize="30dp"
+	            android:background="@null"/>
+        
+        </TableRow>
+        
+        <TableRow
+                android:layout_width="600dp"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_no_corner_without_bottom" >
+        
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    住址："
+                android:textSize="30dp"
+                android:textColor="#87CEFA"/>
+            
+	        <EditText 
+	            android:id="@+id/addressinfo1"
+	            android:layout_width="500dp"
+	            android:layout_height="55dp"
+	            android:textSize="30dp"
+	            android:background="@null"/>
+        
+        </TableRow>
+        
+        <TableRow
+                android:layout_width="600dp"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_no_corner_without_bottom" >
+        
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    邮编："
+                android:textSize="30dp"
+                android:textColor="#87CEFA"/>
+            
+	        <EditText 
+	            android:id="@+id/postcodeinfo1"
+	            android:layout_width="500dp"
+	            android:layout_height="55dp"
+	            android:textSize="30dp"
+	            android:background="@null"/>
+        
+        </TableRow>
+        
+        <TableRow
+                android:layout_width="600dp"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_no_corner_without_bottom" >
+        
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    邮件："
+                android:textSize="30dp"
+                android:textColor="#87CEFA"/>
+            
+	        <EditText 
+	            android:id="@+id/cmailinfo1"
+	            android:layout_width="500dp"
+	            android:layout_height="55dp"
+	            android:textSize="30dp"
+	            android:background="@null"/>
+        
+        </TableRow>
+        
+        <TableRow
+                android:layout_width="600dp"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_no_corner_without_bottom" >
+        
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    公司："
+                android:textSize="30dp"
+                android:textColor="#87CEFA"/>
+            
+	        <EditText 
+	            android:id="@+id/companyinfo1"
+	            android:layout_width="500dp"
+	            android:layout_height="55dp"
+	            android:textSize="30dp"
+	            android:background="@null"/>
+        
+        </TableRow>     
+        
+  	</TableLayout>
+  	
+    </LinearLayout>
+    
+    <View
+		android:layout_width="1.5dp"
+		android:layout_height="match_parent"
+		android:background="@color/deepskyblue"/>
+		  
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="70dp" />
+    
+    <!-- 编辑和删除按钮 -->
+    
+    <LinearLayout 
+        android:layout_width="200dp"
+        android:layout_height="450dp"
+        android:orientation="vertical">
+        
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="200dp" />
+        
+        <Button 
+            android:id="@+id/save_cinfo"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:text="保存"
+            android:textSize="40dp"/>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="30dp" />
+        
+        <Button 
+            android:id="@+id/delete_cinfo"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:text="删除"
+            android:textSize="40dp"/>
+        
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="30dp" />
+        
+
+    </LinearLayout>
+
+</LinearLayout>

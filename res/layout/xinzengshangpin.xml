@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+        <!-- 阻止软键盘弹出 -->
+
+        <RelativeLayout
+            android:id="@+id/linearLayout_focus"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+            <TableRow
+                android:layout_width="400dp"
+                android:layout_height="70dp"
+                android:background="@drawable/shape_top_corner_no_bottom_line"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="商品编号："
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="25dp" />
+                <AutoCompleteTextView
+                    android:id="@+id/edit_xinzeng_shangpinbianhao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:background="@null"
+                    android:inputType="number" >
+              </AutoCompleteTextView>
+                </TableRow>
+
+            <TableRow
+                android:layout_width="400dp"
+                android:layout_height="70dp"
+                android:background="@drawable/shape_no_corner_without_bottom"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="商品名称："
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/edit_xinzeng_shangpinming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:background="@null"
+                    android:inputType="textPersonName" />
+
+            </TableRow>
+
+
+        
+
+            <TableRow
+                android:layout_width="400dp"
+                android:layout_height="70dp"
+                android:background="@drawable/shape_no_corner_without_bottom"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="销售价格："
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/edit_xinzeng_jiage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:background="@null"
+                    android:inputType="numberDecimal" />
+
+            </TableRow>
+
+
+       
+
+            <TableRow
+                android:layout_width="400dp"
+                android:layout_height="70dp"
+                android:background="@drawable/shape_no_corner_without_bottom"
+                android:padding="10dip" >
+
+               <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="库存量："
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/edit_xinzeng_kuncunliang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:ems="10"
+                    android:background="@null"
+                    android:inputType="number" />
+
+            </TableRow>
+
+
+     
+            
+            
+            <TableRow
+                android:layout_width="400dp"
+                android:layout_height="70dp"
+                android:background="@drawable/shape_bottom_corner_no_top_line" 
+                android:padding="10dip" >
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="购买数量："
+                    android:textSize="25dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <EditText
+                    android:id="@+id/edit_xinzeng_goumailiang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:background="@null"
+                    android:inputType="number" />
+               
+                
+            </TableRow>
+
+</TableLayout>

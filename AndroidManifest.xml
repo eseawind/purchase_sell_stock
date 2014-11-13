@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shixi.jxctest"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+    
+    <!--在sdcard中创建/删除文件的权限 --> 
+    <uses-permission 
+		android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/> 
+	<!--往sdcard中写入数据的权限 --> 
+	<uses-permission 
+		android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> 
+
+	<!-- android:icon="@drawable/ic_launcher" -->
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.shixi.jxctest.MainActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape">
+            
+            <!-- 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+             -->
+            
+        </activity>
+        
+        <activity
+            android:name="com.shixi.jxctest.BasicInfo"
+            android:label="基本信息" 
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="landscape">
+        </activity>
+        
+        <activity
+            android:name="com.shixi.jxctest.ProviderInfo"
+            android:label="供货商详细信息" 
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="landscape">
+        </activity>
+        
+        <activity
+            android:name="com.shixi.jxctest.StaffInfo"
+            android:label="职工详细信息" 
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="landscape">
+        </activity>
+        
+        <activity
+            android:name="com.shixi.jxctest.CustomerInfo"
+            android:label="客户详细信息" 
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="landscape">
+        </activity>
+        
+        <activity
+            android:name="com.shixi.jxctest.GoodsInfo"
+            android:label="商品详细信息" 
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="landscape">
+        </activity>
+        
+        <activity
+            android:name="com.shixi.jxctest.AddProviderInfo"
+            android:label="添加供货商信息" 
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="landscape">
+        </activity>
+        
+        <activity
+            android:name="com.shixi.jxctest.AddStaffInfo"
+            android:label="添加职工信息" 
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="landscape">
+        </activity>
+        
+        <activity
+            android:name="com.shixi.jxctest.AddCustomerInfo"
+            android:label="添加客户信息" 
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="landscape">
+        </activity>
+        
+        <activity
+            android:name="com.shixi.jxctest.AddGoodsInfo"
+            android:label="添加商品信息" 
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="landscape">
+        </activity>
+        
+        <activity 
+            android:name=".XiaoShouActivity"                   
+		    android:label="销售管理"
+		    android:windowSoftInputMode="stateHidden"
+		    android:screenOrientation="landscape">     
+	    </activity>
+	    
+        <activity 
+            android:name=".LuRuDingDan"                   
+	        android:label="录入订单"
+	        android:screenOrientation="landscape">               
+	    </activity>	    	           
+	    
+	    <activity 
+	        android:name=".TuiDanChuLi"                   
+		    android:label="退单处理"
+		    android:screenOrientation="landscape">          
+	    </activity>
+	    
+	    <activity 
+	        android:name=".ChaXunDingDan"                   
+		    android:label="查询订单"
+		    android:screenOrientation="landscape">          
+	    </activity>
+	    
+	    <activity 
+	        android:name=".QianKuanXianShi"                   
+		    android:label="欠款显示"
+		    android:screenOrientation="landscape">          
+	    </activity>
+	     <activity 
+	        android:name=".CangKuActivity"                   
+		    android:label="仓库管理"
+		    android:windowSoftInputMode="stateHidden"
+		    android:screenOrientation="landscape">          
+	    </activity>
+	     <activity 
+	        android:name=".CaiGouActivity"                   
+		    android:label="采购管理"
+		    android:windowSoftInputMode="stateHidden"
+		    android:screenOrientation="landscape">          
+	    </activity>
+	    <activity 
+	        android:name=".LuRuHuoDan"                   
+		    android:label="商品信息"
+		    android:windowSoftInputMode="stateHidden"
+		    android:screenOrientation="landscape">          
+	    </activity>
+	    <activity 
+	        android:name=".ChaXunHuoDan"                   
+		    android:label="货单信息"
+		    android:screenOrientation="landscape">          
+	    </activity>
+	     <activity 
+	        android:name=".CaiGouQianKuanXianShi"                   
+		    android:label="还款"
+		    android:screenOrientation="landscape">          
+	    </activity>
+	    
+	     <activity 
+	        android:name=".TuiCangActivity"                   
+		    android:label="退仓处理"
+		    android:windowSoftInputMode="stateHidden"
+		    android:screenOrientation="landscape">          
+	     </activity>
+	    
+	     <activity 
+	        android:name=".ChaCangActivity"                   
+		    android:label="仓库商品信息"
+		    android:windowSoftInputMode="stateHidden"
+		    android:screenOrientation="landscape">          
+	    </activity>
+	      <activity 
+	        android:name=".TuiHuoChuLi"                   
+		    android:label="退货处理"
+		    android:windowSoftInputMode="stateHidden"
+		    android:screenOrientation="landscape">          
+	    </activity>
+	    
+	     <activity 
+	        android:name="com.shixi.log.Login"                   
+		    android:label="进销存管理系统"
+		    android:windowSoftInputMode="stateHidden"
+		    android:screenOrientation="landscape">  
+		    
+	        <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+	         
+	    </activity>
+	    
+	    <activity 
+	        android:name="com.shixi.log.Register"                   
+		    android:label="注册"
+		    android:windowSoftInputMode="stateHidden"
+		    android:screenOrientation="landscape">          
+	    </activity>
+	    
+	    <activity 
+	        android:name="com.shixi.log.FindPwd"                   
+		    android:label="找回密码"
+		    android:windowSoftInputMode="stateHidden"
+		    android:screenOrientation="landscape">          
+	    </activity>
+	    
+	     <!-- Settings -->
+        <activity
+            android:name=".Settings"
+            android:theme="@style/MyDialogStyleBottom">
+        </activity>
+        
+		
+       
+        <uses-library android:name="android.test.runner" />"
+    </application>
+
+    <instrumentation android:name="android.test.InstrumentationTestRunner" 
+        android:targetPackage="com.shixi.jxctest" android:label="Tests for My App"/>"
+</manifest>
