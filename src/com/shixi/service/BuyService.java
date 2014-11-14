@@ -8,7 +8,6 @@ import android.database.sqlite.SQLiteDatabase;
 import com.shixi.domain.Buy;
 import com.shixi.domain.Sail;
 
-
 public class BuyService {
 	private DBOpenHelper dbOpenHelper;
 	
@@ -20,22 +19,19 @@ public class BuyService {
 	 * 添加记录
 	 * @param Buy_register
 	 */
-	public void save(Buy buy, String edit_buy_name, String edit_operator_name,String  edit_pay, String edit_time,String edit_debt) {
+	public void save(Buy buy, String edit_buy_name, String edit_operator_name,String  edit_pay, String edit_time, String edit_debt) {
 		SQLiteDatabase db = dbOpenHelper.getWritableDatabase();	//获得数据库的操作实例
-		
 
 		db.execSQL("insert into buy(buy_name,operator_name, pay, time, debt) values( ?, ?, ?, ?, ?)",
 				new Object[] {edit_buy_name,edit_operator_name,edit_pay, edit_time,edit_debt});
 		
 		db.close();
 	}
-
 	
 	/**
 	 * 删除记录
 	 * @param id
 	 */
-	
 	public void delete(Integer id) {
 		SQLiteDatabase db = dbOpenHelper.getWritableDatabase();	
 		db.execSQL("delete from buy where buyid=?", new Object[] {id});
@@ -45,11 +41,11 @@ public class BuyService {
 	* @param tablename
 	*/
 	public void clearFeedTable(){
-		  String sql = "DELETE FROM buy;";
-		        SQLiteDatabase db =  dbOpenHelper.getWritableDatabase();
-		  db.execSQL(sql);
+		String sql = "DELETE FROM buy;";
+		SQLiteDatabase db =  dbOpenHelper.getWritableDatabase();
+		db.execSQL(sql);
 		  
-		 }
+	}
 
 	/**
 	 * 更改记录
