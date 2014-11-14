@@ -19,7 +19,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class FindPwd extends Activity {
-
 	private DBOpenHelper dbOpenHelper = new DBOpenHelper(this);
 	private TableService tableService = new TableService(this);
 	private Staff staff;
