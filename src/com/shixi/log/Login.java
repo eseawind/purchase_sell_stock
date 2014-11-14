@@ -62,10 +62,6 @@ public class Login extends Activity {
 			Toast.makeText(getApplicationContext(), "用户名或密码不正确",
 				     Toast.LENGTH_SHORT).show();
 		}
-		
-		//测试
-//		Toast.makeText(getApplicationContext(), tableService.find_byname_s_pwd(logname),
-//			     Toast.LENGTH_SHORT).show();
 	}
 	
 	public void onClick_register(View v) {
