@@ -41,8 +41,6 @@ public class Settings extends Activity {
 	private EditText newpwd;
 	private EditText confirmpwd;
 	
-//	private PreferencesService service;
-	
 	private LinearLayout brlinearLayout;
 	
 	private Integer id = 1;
@@ -50,7 +48,6 @@ public class Settings extends Activity {
 	private String prepwd;
 	
 	private TableService tableService = new TableService(this);
-//	private Staff staff = tableService.find_s(staffaccount.id);	
 	
 	private StaffAccount staffaccount;
 	
@@ -59,11 +56,7 @@ public class Settings extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.settings);
-		
-		
-//		service = new PreferencesService(this);
-		
+		setContentView(R.layout.settings);		
 	}
 	
 	
@@ -128,12 +121,10 @@ public class Settings extends Activity {
 						     Toast.LENGTH_SHORT).show();
 				}
 				else {			
-//					service.save(id, name, newpwd.getText().toString());
 					tableService.update_pwd(staff, newpwds, staffaccount.id);
 					Toast.makeText(getApplicationContext(), "保存成功！",
 						     Toast.LENGTH_SHORT).show();
-				}
-								
+				}						
 			}} )  
 	    .setNegativeButton("取消" , null )  
 	    .show();   
@@ -176,7 +167,7 @@ public class Settings extends Activity {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				// TODO Auto-generated method stub
-				Uri uricontact= Uri.parse("http://www.ioa.ac.cn/");
+				Uri uricontact= Uri.parse("cosmio.w@gmail.com");
 				Intent intentme = new Intent(Intent.ACTION_VIEW, uricontact);
 				startActivity(intentme);
 				finish();
@@ -208,7 +199,6 @@ public class Settings extends Activity {
 		.setMessage("确定退出？！")
 		.setPositiveButton("确定", new DialogInterface.OnClickListener() {
 			
-
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				tableService.delete_s(staffaccount.id);
@@ -231,13 +221,5 @@ public class Settings extends Activity {
 		})
 		.create().show();
 	}
-
-	
-	
-	
-	
-	
-	
-	
 	
 }
