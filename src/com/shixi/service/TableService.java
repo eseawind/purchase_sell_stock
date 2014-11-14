@@ -111,31 +111,6 @@ public class TableService {
 	}
 	
 	/**
-	 * 返回记录
-	 * @param offset
-	 * @param maxresult
-	 * @return
-	 */
-//	public List<Customer> getScrollData(int offset, int maxresult) {
-//		List<Customer> customers = new ArrayList<Customer>();
-//		SQLiteDatabase db = dbOpenHelper.getWritableDatabase();	
-//		Cursor cursor = db.rawQuery("select * from customer order by customerid asc limit?, ?",
-//				new String[] {String.valueOf(offset), String.valueOf(maxresult)});
-//		while(cursor.moveToNext()) {
-//			int customerid = cursor.getInt(cursor.getColumnIndex("customerid"));
-//			String name = cursor.getString(cursor.getColumnIndex("name"));
-//			String phone = cursor.getString(cursor.getColumnIndex("phone"));
-//			String address = cursor.getString(cursor.getColumnIndex("address"));
-//			String postcode = cursor.getString(cursor.getColumnIndex("postcode"));
-//			String cmail = cursor.getString(cursor.getColumnIndex("cmail"));
-//			String company = cursor.getString(cursor.getColumnIndex("company"));
-//			customers.add(new Customer(customerid, name, phone, address, postcode, cmail, company));
-//		}
-//		cursor.close();
-//		return customers;
-//	}
-	
-	/**
 	 * 返回记录总数
 	 * @return
 	 */
