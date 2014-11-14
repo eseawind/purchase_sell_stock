@@ -41,13 +41,9 @@ public class DBOpenHelper extends SQLiteOpenHelper {
 
 	}
 	 /**
-
      * 根据输入内容模糊查询
-
      * @param name
-
      * @return
-
      */
 
     public Cursor query_code(String code) {
