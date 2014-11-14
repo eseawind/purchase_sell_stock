@@ -20,3 +20,4 @@ public class PreferencesService {
 		editor.commit();
 	}
 }
+
