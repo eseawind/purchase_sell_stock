@@ -20,22 +20,19 @@ public class BuyServiceRegister {
 	 * 添加记录
 	 * @param Buy_register
 	 */
-	public void save_register(BuyRegister buy, String edit_goods_id, String edit_product_name,String  edit_product_price, String edit_purchase_quantity,String tobuy) {
+	public void save_register(BuyRegister buy, String edit_goods_id, String edit_product_name,String  edit_product_price, String edit_purchase_quantity, String tobuy) {
 		SQLiteDatabase db = dbOpenHelper.getWritableDatabase();	//获得数据库的操作实例
 		
-
 		db.execSQL("insert into buy(goods_id,product_name, product_price, purchase_quantity,tobuy) values( ?, ?, ?, ?, ?)",
 				new Object[] {edit_goods_id,edit_product_name, edit_product_price, edit_purchase_quantity,tobuy});
 		
 		db.close();
 	}
 
-	
 	/**
 	 * 删除记录
 	 * @param id
 	 */
-	
 	public void delete_register(Integer id) {
 		SQLiteDatabase db = dbOpenHelper.getWritableDatabase();	
 		db.execSQL("delete from buy_register where buy_registerid=?", new Object[] {id});
@@ -111,7 +108,6 @@ public class BuyServiceRegister {
 		return null;
 	}
 	
-	
 	/**
 	 * 返回记录
 	 * @param offset
@@ -130,14 +126,12 @@ public class BuyServiceRegister {
 			String product_price = cursor.getString(cursor.getColumnIndex("product_price"));
 			String purchase_quantity = cursor.getString(cursor.getColumnIndex("purchase_quantity"));
 			String tobuy = cursor.getString(cursor.getColumnIndex("tobuy"));
-
 			
 			buys.add(new BuyRegister(buy_registerid,goods_id, product_name, product_price, purchase_quantity,tobuy));
 		}
 		cursor.close();
 		return buys;
 	}
-	
 	
 	/**
 	 * 返回buy_register记录总数
@@ -156,7 +150,6 @@ public class BuyServiceRegister {
 		SQLiteDatabase db = dbOpenHelper.getWritableDatabase();	
 		Cursor cursor = db.rawQuery("select buy_registerid as _id,goods_id,product_name,product_price,purchase_quantity,tobuy from buy_register order by goods_id asc limit?, ?",
 				new String[] {String.valueOf(offset), String.valueOf(maxresult)});
-		
 		return cursor;
 	}
 	public Cursor getCursorScrollData_chaxun(String _id,String goods_id,String product_name,String product_price,String purchase_quantity ,int offset, int maxresult) {
@@ -171,7 +164,6 @@ public class BuyServiceRegister {
 		SQLiteDatabase db = dbOpenHelper.getWritableDatabase();	
 		Cursor cursor = db.rawQuery("select buy_registerid as _id,goods_id,product_name,product_price,purchase_quantity,tobuy from buy_register  order by goods_id asc limit?, ?",
 				new String[] {String.valueOf(offset), String.valueOf(maxresult)});
-		
 		return cursor;
 	}
 	
