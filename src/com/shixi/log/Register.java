@@ -110,7 +110,6 @@ public class Register extends Activity {
 	
 	
 	public void onClick_ok(View v) {
-		
 		name = ((EditText)findViewById(R.id.reg_name)).getText().toString();
 		pwd = ((EditText)findViewById(R.id.reg_pwd)).getText().toString();
 		pwd_conf = ((EditText)findViewById(R.id.reg_pwd2)).getText().toString();
