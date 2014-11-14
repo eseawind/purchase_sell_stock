@@ -45,7 +45,6 @@ public class BackupAndRestore {
 	public void restoreDB() {
 		fileList = getFileList();
 		AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
-//		builder.setIcon(android.R.drawable.ic_dialog_info);
 		builder.setTitle("»Ö¸´");
 		builder.setSingleChoiceItems(getFileList(), -1, new DialogClick());
 		builder.setPositiveButton("È·¶¨", new DialogClick());
@@ -214,8 +213,6 @@ public class BackupAndRestore {
 		String sp = File.separator;
 		String absPath = Environment.getDataDirectory().getAbsolutePath();
 		String pakName = mContext.getPackageName();
-//		String dbPath = absPath + sp + "data" + sp + pakName + sp + "databases"
-//				+ sp + dbName;
 		
 		String dbPath = sp + "data" + sp + absPath + sp + pakName + sp + "databases"
 				+ sp + dbName;
