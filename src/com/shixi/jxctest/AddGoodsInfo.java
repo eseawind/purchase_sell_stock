@@ -82,13 +82,8 @@ public class AddGoodsInfo extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				finish();
-			}});
-				
-			
+			}});		
 	}
-
-	
-	
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
