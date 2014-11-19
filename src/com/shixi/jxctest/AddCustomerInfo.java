@@ -78,19 +78,7 @@ public class AddCustomerInfo extends Activity {
 		MenuInflater inflater = getMenuInflater();
 		inflater.inflate(R.menu.actionbar_nomenu, menu);
 		actionBar.setBackgroundDrawable(this.getResources().getDrawable(R.drawable.bg));
-		
-//		actionBar = getActionBar();
-//		actionBar.setDisplayHomeAsUpEnabled(true);
-		
+	
 		return true;
 	}
-	
-//	@Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        if(item.getItemId() == android.R.id.home) {
-//            finish();
-//            return true;
-//        }
-//        return super.onOptionsItemSelected(item);
-//    }
 }
