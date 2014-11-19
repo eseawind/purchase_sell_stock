@@ -29,7 +29,6 @@ public class StorageService {
 				new Object[] {goodsid,name,area,producter,date, quality,bid,price,storage_quantity,operator_name,storage_time});
 		db.close();
 	}
-	
 
 	/**
 	 * 删除记录
@@ -44,8 +43,6 @@ public class StorageService {
 		SQLiteDatabase db = dbOpenHelper.getWritableDatabase();	
 		db.execSQL("delete from storage where name=?", new Object[] {name});
 	}
-	
-	
 	
 	/**
 	 * 更改记录
@@ -119,7 +116,6 @@ public class StorageService {
 		return null;
 	}
 	
-	
 	/**
 	 * 返回记录总数
 	 * @return
@@ -160,6 +156,7 @@ public class StorageService {
 				new String[] {"%" + name + "%", String.valueOf(offset), String.valueOf(maxresult)});
 		return cursor;
 	}
+
 	public Cursor getCursorScrollData_chaxun(String _id,String name,String operator_name,String storage_time ,int offset, int maxresult) {
 		List<Storage> customers = new ArrayList<Storage>();
 		SQLiteDatabase db = dbOpenHelper.getWritableDatabase();	
@@ -167,6 +164,7 @@ public class StorageService {
 				new String[] {"%" + _id + "%",  "%" + name+ "%",  "%" + operator_name+ "%", "%" +  storage_time + "%", String.valueOf(offset), String.valueOf(maxresult)});
 		return cursor;
 	}
+
 	public Cursor getCursorScrollData_code(String code ,int offset, int maxresult) {
 		List<Storage> customers = new ArrayList<Storage>();
 		SQLiteDatabase db = dbOpenHelper.getWritableDatabase();	
