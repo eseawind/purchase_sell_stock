@@ -62,7 +62,6 @@ public class AddProviderInfo extends Activity {
 			public void onClick(View arg0) {
 				finish();
 			}});
-		
 	}
 
 	@Override
