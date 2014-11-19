@@ -131,16 +131,12 @@ public class BasicInfo extends Activity {
 		
 		button_add2 = (Button)findViewById(R.id.button_add2);
 		button_find2 = (Button)findViewById(R.id.button_find2);
-//		button_back1 = (Button)findViewById(R.id.button_back1);
 		addgoods = (Button)findViewById(R.id.addgoods);
 		findgoods = (Button)findViewById(R.id.findgoods);
 		addprovider = (Button)findViewById(R.id.button_addp);
 		findprovider = (Button)findViewById(R.id.button_findp);
-//		goodsback = (Button)findViewById(R.id.goodsback);
 		addstaff = (Button)findViewById(R.id.button_adds);
 		findstaff = (Button)findViewById(R.id.button_finds);
-//		backbasicp = (Button)findViewById(R.id.button_backp);
-//		backbasics = (Button)findViewById(R.id.button_backs);
 		
 		new AlertDialog.Builder(this);
 		
