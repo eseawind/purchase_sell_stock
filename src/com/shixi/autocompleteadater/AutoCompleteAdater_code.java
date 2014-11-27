@@ -48,12 +48,5 @@ public class AutoCompleteAdater_code extends SimpleCursorAdapter {
 			dbHelper = new DBOpenHelper(this.context);
 		}
 		return dbHelper;
-	}
-
-	
-
-    
-	
-	
-	
+	}	
 }
