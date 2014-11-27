@@ -49,11 +49,4 @@ public class AutoCompleteAdater_tuicang extends SimpleCursorAdapter {
 		}
 		return dbHelper;
 	}
-
-	
-
-    
-	
-	
-	
 }
