@@ -49,11 +49,4 @@ public class AutoCompleteAdater_buyid extends SimpleCursorAdapter {
 		}
 		return dbHelper;
 	}
-
-	
-
-    
-	
-	
-	
 }
