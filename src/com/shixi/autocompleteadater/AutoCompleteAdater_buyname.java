@@ -52,11 +52,4 @@ public class AutoCompleteAdater_buyname extends SimpleCursorAdapter {
 		}
 		return dbHelper;
 	}
-
-	
-
-    
-	
-	
-	
 }
